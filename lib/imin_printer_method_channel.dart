@@ -89,7 +89,7 @@ class MethodChannelIminPrinter extends IminPrinterPlatform {
 
   @override
   Future<void> setTextStyle(IminFontStyle style) async {
-    logger.d('setTextStyle', style.index);
+    logger.d('setTextStyle',);
     Map<String, dynamic> arguments = <String, dynamic>{
       "style": style.index,
     };
@@ -713,7 +713,7 @@ class MethodChannelIminPrinter extends IminPrinterPlatform {
       }
 
       if (style.lineHeight != null) {
-        logger.d('lineHeight', style.lineHeight);
+        logger.d('lineHeight',);
         await setTextBitmapLineSpacing(style.lineHeight!);
       }
 
@@ -851,8 +851,8 @@ class MethodChannelIminPrinter extends IminPrinterPlatform {
   }
 
   @override
-  Future<void> sendRAWDataHexStr(String hex) async {
-    Map<String, dynamic> arguments = <String, dynamic>{"hex": hex};
+  Future<void> sendRAWDataHexStr(String bytes) async {
+    Map<String, dynamic> arguments = <String, dynamic>{"hex": bytes,};
     await methodChannel.invokeMethod<void>('sendRAWDataHexStr', arguments);
   }
 }

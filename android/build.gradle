@@ -1,20 +1,20 @@
 group 'com.imin.printer.imin_printer'
 version '1.0'
 
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-         maven{
-            allowInsecureProtocol = true
-            url 'https://www.jitpack.io'
-        }
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.0'
-    }
-}
+//buildscript {
+//    repositories {
+//        google()
+//        mavenCentral()
+//         maven{
+//            allowInsecureProtocol = true
+//            url 'https://www.jitpack.io'
+//        }
+//    }
+//
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:7.3.0'
+//    }
+//}
 
 rootProject.allprojects {
     repositories {
